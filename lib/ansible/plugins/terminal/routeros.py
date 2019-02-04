@@ -60,6 +60,7 @@ class TerminalModule(TerminalBase):
 
     def on_open_shell(self):
         prompt = self._get_prompt()
+        print(prompt)
         try:
             if prompt.strip().endswith(b':'):
                 self._exec_cli_command(b' ')
